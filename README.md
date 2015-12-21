@@ -1,6 +1,6 @@
 # elk-airgap
 # Goal:
-The goal of this project was to create a simple, automated means to stand up an ELK (Elasticsearch, Logstash, Kibana) stack on an Ubuntu 14.04 LTS system. 
+The goal of this project was to create a simple, automated means to stand up an ELK (Elasticsearch, Logstash, Kibana) stack on an Ubuntu 14.04 LTS system in an airgapped (offline) environment.
 # Components:
 It is comprised of 2 parts: the downloader (python) which requires an internet connection, and the installer (bash) which does not.
 
