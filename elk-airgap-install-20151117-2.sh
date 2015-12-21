@@ -125,7 +125,7 @@ check_elasticsearch() {
 install_elasticsearch() {
   elasticsearch_file="$1"
   sudo dpkg -i elasticsearch/$elasticsearch_file
-  sudo sed -i.bak 's/# cluster.name: my-application/cluster.name: twardowski/' /etc/elasticsearch/elasticsearch.yml
+  sudo sed -i.bak 's/# cluster.name: my-application/cluster.name: skitheslicer/' /etc/elasticsearch/elasticsearch.yml
   sudo sed -i "s/# node.name: node-1/node.name: $(hostname)/" /etc/elasticsearch/elasticsearch.yml
   sudo sed -i 's/# network.host: 192.168.0.1/network.host: localhost/' /etc/elasticsearch/elasticsearch.yml
   #sudo sed -i 's/# bootstrap.mlockall: true/bootstrap.mlockall: true/' /etc/elasticsearch/elasticsearch.yml
