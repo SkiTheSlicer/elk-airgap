@@ -256,7 +256,6 @@ install_kibana() {
   sudo sed -i.bak 's/host: "0.0.0.0"/host: "localhost"/' /opt/kibana/config/kibana.yml
   sudo cp kibana/etc/kibana4 /etc/init.d/
   sudo chmod +x /etc/init.d/kibana4
-  #sudo cp /opt/kibana/src/public/images/no_border.png ~/ && sudo cp kibana/no_border_twardowski.png /opt/kibana/src/public/images/no_border.png  # Change Web Branding
   sudo update-rc.d kibana4 defaults 96 9
   sudo service kibana4 start
 }
