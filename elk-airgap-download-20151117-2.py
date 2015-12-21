@@ -326,7 +326,7 @@ def parse_arguments():
   parser = argparse.ArgumentParser(
     prog='elk-airgap-download.py',
     description='Download ELK dependencies for offline installation.',
-    epilog='Created by Daniel Twardowski (smileyson@hotmail.com)')
+    epilog='Created by SkiTheSlicer (https://github.com/SkiTheSlicer/elk-airgap/)')
     #formatter_class=argparse.RawTextHelpFormatter)
   parser.add_argument('-l', '--list-only', 
                       help='List newest version(s) without downloading dependencies.',
